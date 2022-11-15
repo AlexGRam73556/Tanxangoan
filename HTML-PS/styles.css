@@ -1,0 +1,14 @@
+.nav {
+    margin-bottom: 5;
+    color: coral;
+    padding: 0%;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+}
+
+#fondo {
+    padding-top: 50px;
+}
