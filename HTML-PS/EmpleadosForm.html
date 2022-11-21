@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Tanxangoan</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-  </head>
-  <!--NAVBAR-->
-  <div>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<!--Navbar-->
+<div class="backgrouund">
+    <nav class="navbar navbar-dark fixed-top" id="Navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Tanxangoan</a>
         <button
@@ -73,31 +72,74 @@
   <br>
   <br>
   <br>
-  <!--/NAVBAR-->
-  <!--Form-->
-  <div class="container">
-    <form action="">
-        <label for="">Nombres</label>
-        <input type="text"/>
-        <label for="">Apellidos</label>
-        <input type="text"/>
-        <label for="">RFC</label>
-        <input type="text"/>
-        <label for="">Precio</label>
-        <input type="text"/>
-    </form>
+  <br>
+  <br>
+<!--/Navbar-->
+<!--Form-->
+<div>
+  <table>
+    <tr>
+      <th>
+        <table>
+          <tr>
+            <th>
+              <form action="">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="name" placeholder="name@example.com">
+                  <label for="name">Nombre</label>
+                </div>
+              </form>
+            </th>
+            <th>
+              <form action="">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="lastName" placeholder="name@example.com">
+                  <label for="lastName">Apellido</label>
+                </div>
+              </form>
+            </th>
+            <th>
+              <form action="">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="phone" placeholder="name@example.com">
+                  <label for="phone">Teléfono</label>
+                </div>
+              </form>
+            </th>
+          </tr>
+          <tr>
+            <th></th>
+            <th>
+              <form action="">
+                <div class="mb-4">
+                  <label for="sexBox" class="form-label">Sexo</label>
+                  <select id="sexBox" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                  </select>
+                </div>
+              </form>
+            </th>
+            <th></th>
+          </tr>
+        </table>
+      </th>
+      <th>
+        <img src="./IMG/caballo1.jpg" alt="">
+      </th>
+    </tr>
+  </table>
+  <div>
+    <button type="button" class="btn btn-success" id="btnAdd">Agregar</button>
+    <button type="button" class="btn btn-warning" id="btnEdit">Modificar</button>
+    <button type="button" class="btn btn-danger" id="btnDelete">Eliminar</button>
+  </div>
 </div>
-<br>
-<div class="container">
-    <button type="button">Agregar</button>
-    <button type="button">Actualizar</button>
-</div>
+
 <!--/Form-->
-  <!-- JavaScript Bundle with Popper -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"
-  ></script>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
